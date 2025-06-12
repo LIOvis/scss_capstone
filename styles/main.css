@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+body .page-wrapper {
+  background-color: #555555;
+}
+body .page-wrapper header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-size: 12px;
+  height: 75px;
+}
+body .page-wrapper header nav a {
+  text-decoration: none;
+  color: #555555;
+}
+body .page-wrapper header nav .nav-name {
+  font-size: 18px;
+  margin-left: 15px;
+  padding: 10px 15px;
+}
+body .page-wrapper header nav .nav-items {
+  display: flex;
+  margin-right: 15px;
+}
+body .page-wrapper header nav .nav-items .nav-item {
+  padding: 15px;
+}
+body .page-wrapper header nav .nav-items .nav-button {
+  background-color: #e91e63;
+  border-radius: 100px;
+  box-shadow: 0px 5px 30px -8px #e91e63;
+  transition: box-shadow ease-out 0.3s;
+}
+body .page-wrapper header nav .nav-items .nav-button a {
+  color: white;
+  padding: 5px 10px;
+}
+body .page-wrapper header nav .nav-items .nav-button a {
+  color: white;
+  transition: color ease-out 0.8s;
+  text-decoration: none;
+}
+body .page-wrapper header nav .nav-items .nav-button:hover {
+  box-shadow: 0px 10px 20px -5px #e91e63;
+  transition: box-shadow ease-in 0.3s;
+}
+body .page-wrapper header nav .nav-items .nav-button:hover a {
+  color: #ffaec9;
+  transition: color ease-in 0.8s;
+}
+body .page-wrapper .hero-wrapper {
+  background-image: url("../../assets/clouds.jpg");
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+}
+body .page-wrapper .hero-wrapper .hero-image-wrapper img {
+  position: relative;
+  width: 100vw;
+}
+body .page-wrapper .hero-wrapper .hero-content-wrapper {
+  background-image: rgba(0, 0, 0, 0.1254901961);
+  position: absolute;
+  text-align: center;
+  top: 200px;
+}
+body .page-wrapper .page-content-wrapper {
+  margin: 0 20px;
+  background-color: white;
+  position: relative;
+}/*# sourceMappingURL=main.css.map */

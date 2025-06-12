@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+$light-grey: #555555;
+$orange: #ff9800;
+$red: #f44336;
+$pink: #e91e63;
+$light-pink: #ffaec9;
+$pink-purple: #9b2279;
+$purple: #89229b;
+$blue: #00bcd4;
+$green: #4caf50;
+$header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
+
+@mixin button(
+  $button-color: $pink,
+  $shadow-color: $pink,
+  $border-radius: 100px,
+  $color-change: $light-pink
+) {
+  a {
+    color: white;
+    transition: color ease-out 0.8s;
+    text-decoration: none;
+  }
+
+  background-color: $button-color;
+  border-radius: $border-radius;
+  box-shadow: 0px 5px 30px -8px $shadow-color;
+  transition: box-shadow ease-out 0.3s;
+
+  &:hover {
+    a {
+      color: $color-change;
+      transition: color ease-in 0.8s;
+    }
+    box-shadow: 0px 10px 20px -5px $shadow-color;
+    transition: box-shadow ease-in 0.3s;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+
+  .page-wrapper {
+    background-color: $light-grey;
+
+    header {
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        font-size: 12px;
+        height: 75px;
+
+        a {
+          text-decoration: none;
+          color: $light-grey;
+        }
+
+        .nav-name {
+          font-size: 18px;
+          margin-left: 15px;
+          padding: 10px 15px;
+        }
+
+        .nav-items {
+          display: flex;
+
+          margin-right: 15px;
+
+          .nav-item {
+            padding: 15px;
+          }
+
+          .nav-button {
+            a {
+              color: white;
+              padding: 5px 10px;
+            }
+            @include button;
+          }
+        }
+      }
+    }
+
+    .hero-wrapper {
+      background-image: url("../../assets/clouds.jpg");
+      background-size: 100vw auto;
+      background-repeat: no-repeat;
+
+      .hero-image-wrapper {
+        img {
+          position: relative;
+          width: 100vw;
+        }
+      }
+
+      .hero-content-wrapper {
+        background-image: #00000020;
+        position: absolute;
+        text-align: center;
+        top: 200px;
+      }
+    }
+
+    .page-content-wrapper {
+      margin: 0 20px;
+      background-color: white;
+      position: relative;
+    }
+  }
+}
