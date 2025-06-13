@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
 $dark-grey: #323437;
-$lighter-grey: #888888;
-$light-grey: #555555;
+$grey: #555555;
+$light-grey: #999999;
+$lighter-grey: #dcdcdc;
 $orange: #ff9800;
 $red: #f44336;
 $pink: #e91e63;
@@ -28,7 +29,7 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
 
   background-color: $button-color;
   border-radius: $border-radius;
-  box-shadow: 0px 5px 30px -8px $shadow-color;
+  box-shadow: 0px 5px 10px -5px $shadow-color;
   transition: box-shadow ease-out 0.3s;
 
   &:hover {
@@ -36,7 +37,7 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
       color: $color-change;
       transition: color ease-in 0.8s;
     }
-    box-shadow: 0px 10px 20px -5px $shadow-color;
+    box-shadow: 0px 5px 10px -3px $shadow-color;
     transition: box-shadow ease-in 0.3s;
   }
 }
@@ -51,44 +52,6 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
   justify-content: $justify-content;
   align-items: $align-items;
   gap: $gap;
-}
-
-$light-grey: #555555;
-$orange: #ff9800;
-$red: #f44336;
-$pink: #e91e63;
-$light-pink: #ffaec9;
-$pink-purple: #9b2279;
-$purple: #89229b;
-$blue: #00bcd4;
-$green: #4caf50;
-$header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
-
-@mixin button(
-  $button-color: $pink,
-  $shadow-color: $pink,
-  $border-radius: 100px,
-  $color-change: $light-pink
-) {
-  a {
-    color: white;
-    transition: color ease-out 0.8s;
-    text-decoration: none;
-  }
-
-  background-color: $button-color;
-  border-radius: $border-radius;
-  box-shadow: 0px 5px 30px -8px $shadow-color;
-  transition: box-shadow ease-out 0.3s;
-
-  &:hover {
-    a {
-      color: $color-change;
-      transition: color ease-in 0.8s;
-    }
-    box-shadow: 0px 10px 20px -5px $shadow-color;
-    transition: box-shadow ease-in 0.3s;
-  }
 }
 
 body {
@@ -129,9 +92,18 @@ body {
         align-items: center;
         color: white;
         z-index: 2;
+        font-size: 14px;
 
         .hero-title-wrapper {
-          margin-bottom: 20px;
+          margin: 0 15% 20px 15%;
+
+          h1 {
+            font-size: 67px;
+          }
+        }
+
+        .hero-text-wrapper {
+          font-family: "Roboto Slab", "Times New Roman", Times, serif;
         }
         .hero-button-wrapper {
           margin-top: 20px;
@@ -139,6 +111,160 @@ body {
           .button {
             padding: 15px 20px;
             @include button($border-radius: 5px);
+          }
+        }
+      }
+    }
+
+    .page-content-wrapper {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto Slab", "Times New Roman", Times, serif;
+      }
+
+      h2 {
+        font-size: 37px;
+      }
+
+      h4,
+      h5 {
+        font-size: 18px;
+      }
+
+      .feat-wrapper {
+        text-align: center;
+        padding: 20px 20px 90px 20px;
+
+        .feat-title-wrapper {
+          padding-bottom: 40px;
+        }
+
+        .feat-items-wrapper {
+          @include container($gap: 20px);
+
+          .feat-item {
+            .feat-item-title-wrapper {
+              padding: 24px 0;
+            }
+
+            .feat-item-text-wrapper {
+              font-size: 14px;
+              color: $light-grey;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+
+      .about-wrapper {
+        position: relative;
+        height: 550px;
+        background-image: url("../../assets/mountains.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #000000ab;
+          z-index: 1;
+        }
+
+        .about-title-wrapper {
+          position: relative;
+          padding: 40px 30px 10px 30px;
+          z-index: 1;
+          h2 {
+            font-size: 28px;
+          }
+        }
+
+        .about-text-wrapper {
+          position: relative;
+          padding: 10px 30px 80px 30px;
+          z-index: 1;
+          font-size: 18px;
+        }
+
+        .about-image-wrapper {
+          width: 100%;
+          text-align: center;
+          img {
+            position: relative;
+            z-index: 1;
+            width: 90%;
+          }
+        }
+      }
+
+      .contact-wrapper {
+        position: relative;
+        height: 400px;
+        background-image: url("../../assets/mountains.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #000000ab;
+          z-index: 1;
+        }
+
+        .contact-title-wrapper {
+          position: relative;
+          padding: 120px 30px 10px 30px;
+          z-index: 1;
+          h2 {
+            font-size: 24px;
+          }
+        }
+
+        .contact-items-wrapper {
+          position: relative;
+          padding: 20px 30px 10px 30px;
+          z-index: 1;
+
+          .contact-item-wrapper {
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-areas:
+              "icon title"
+              ". description";
+            grid-template-columns: 1fr 10fr;
+
+            .contact-item-icon-wrapper {
+              grid-area: icon;
+              font-size: 38px;
+            }
+
+            .contact-title-wrapper {
+              grid-area: title;
+            }
+
+            .contact-item-description-wrapper {
+              grid-area: description;
+              color: $lighter-grey;
+              font-size: 14px;
+            }
           }
         }
       }

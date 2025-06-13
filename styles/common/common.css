@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 * {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 body h1,
 body h2,
 body h3,
@@ -14,7 +16,7 @@ body h6 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 body .page-wrapper {
-  background-color: #888888;
+  background-color: #dcdcdc;
 }
 body .page-wrapper header nav {
   position: fixed;
@@ -48,7 +50,7 @@ body .page-wrapper header nav .nav-items .nav-item {
 body .page-wrapper header nav .nav-items .nav-button {
   background-color: #e91e63;
   border-radius: 100px;
-  box-shadow: 0px 5px 30px -8px #e91e63;
+  box-shadow: 0px 5px 10px -5px #e91e63;
   transition: box-shadow ease-out 0.3s;
 }
 body .page-wrapper header nav .nav-items .nav-button a {
@@ -61,7 +63,7 @@ body .page-wrapper header nav .nav-items .nav-button a {
   text-decoration: none;
 }
 body .page-wrapper header nav .nav-items .nav-button:hover {
-  box-shadow: 0px 10px 20px -5px #e91e63;
+  box-shadow: 0px 5px 10px -3px #e91e63;
   transition: box-shadow ease-in 0.3s;
 }
 body .page-wrapper header nav .nav-items .nav-button:hover a {
@@ -69,13 +71,13 @@ body .page-wrapper header nav .nav-items .nav-button:hover a {
   transition: color ease-in 0.8s;
 }
 body .page-wrapper .page-content-wrapper {
-  margin: 0 20px;
+  margin: 0 15px;
   background-color: white;
   border-radius: 5px 5px 0 0;
   position: relative;
   top: -50px;
   z-index: 99;
-  padding-bottom: 50px;
+  box-shadow: 0px 5px 17px 0px #555555;
 }
 body .page-wrapper footer {
   color: white;

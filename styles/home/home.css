@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 body .page-wrapper#home .hero-wrapper {
   background-image: url("../../assets/clouds.jpg");
   background-size: 100vw auto;
@@ -36,9 +36,16 @@ body .page-wrapper#home .hero-wrapper .hero-content-wrapper {
   align-items: center;
   color: white;
   z-index: 2;
+  font-size: 14px;
 }
 body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-title-wrapper {
-  margin-bottom: 20px;
+  margin: 0 15% 20px 15%;
+}
+body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-title-wrapper h1 {
+  font-size: 67px;
+}
+body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-text-wrapper {
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
 }
 body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-button-wrapper {
   margin-top: 20px;
@@ -48,7 +55,7 @@ body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-button-wrapper
   padding: 15px 20px;
   background-color: #e91e63;
   border-radius: 5px;
-  box-shadow: 0px 5px 30px -8px #e91e63;
+  box-shadow: 0px 5px 10px -5px #e91e63;
   transition: box-shadow ease-out 0.3s;
 }
 body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-button-wrapper .button a {
@@ -57,10 +64,140 @@ body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-button-wrapper
   text-decoration: none;
 }
 body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-button-wrapper .button:hover {
-  box-shadow: 0px 10px 20px -5px #e91e63;
+  box-shadow: 0px 5px 10px -3px #e91e63;
   transition: box-shadow ease-in 0.3s;
 }
 body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-button-wrapper .button:hover a {
   color: #ffaec9;
   transition: color ease-in 0.8s;
+}
+body .page-wrapper#home .page-content-wrapper h1,
+body .page-wrapper#home .page-content-wrapper h2,
+body .page-wrapper#home .page-content-wrapper h3,
+body .page-wrapper#home .page-content-wrapper h4,
+body .page-wrapper#home .page-content-wrapper h5,
+body .page-wrapper#home .page-content-wrapper h6 {
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
+}
+body .page-wrapper#home .page-content-wrapper h2 {
+  font-size: 37px;
+}
+body .page-wrapper#home .page-content-wrapper h4,
+body .page-wrapper#home .page-content-wrapper h5 {
+  font-size: 18px;
+}
+body .page-wrapper#home .page-content-wrapper .feat-wrapper {
+  text-align: center;
+  padding: 20px 20px 90px 20px;
+}
+body .page-wrapper#home .page-content-wrapper .feat-wrapper .feat-title-wrapper {
+  padding-bottom: 40px;
+}
+body .page-wrapper#home .page-content-wrapper .feat-wrapper .feat-items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+body .page-wrapper#home .page-content-wrapper .feat-wrapper .feat-items-wrapper .feat-item .feat-item-title-wrapper {
+  padding: 24px 0;
+}
+body .page-wrapper#home .page-content-wrapper .feat-wrapper .feat-items-wrapper .feat-item .feat-item-text-wrapper {
+  font-size: 14px;
+  color: #999999;
+  line-height: 20px;
+}
+body .page-wrapper#home .page-content-wrapper .about-wrapper {
+  position: relative;
+  height: 550px;
+  background-image: url("../../assets/mountains.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+body .page-wrapper#home .page-content-wrapper .about-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6705882353);
+  z-index: 1;
+}
+body .page-wrapper#home .page-content-wrapper .about-wrapper .about-title-wrapper {
+  position: relative;
+  padding: 40px 30px 10px 30px;
+  z-index: 1;
+}
+body .page-wrapper#home .page-content-wrapper .about-wrapper .about-title-wrapper h2 {
+  font-size: 28px;
+}
+body .page-wrapper#home .page-content-wrapper .about-wrapper .about-text-wrapper {
+  position: relative;
+  padding: 10px 30px 80px 30px;
+  z-index: 1;
+  font-size: 18px;
+}
+body .page-wrapper#home .page-content-wrapper .about-wrapper .about-image-wrapper {
+  width: 100%;
+  text-align: center;
+}
+body .page-wrapper#home .page-content-wrapper .about-wrapper .about-image-wrapper img {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+}
+body .page-wrapper#home .page-content-wrapper .contact-wrapper {
+  position: relative;
+  height: 400px;
+  background-image: url("../../assets/mountains.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+body .page-wrapper#home .page-content-wrapper .contact-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6705882353);
+  z-index: 1;
+}
+body .page-wrapper#home .page-content-wrapper .contact-wrapper .contact-title-wrapper {
+  position: relative;
+  padding: 120px 30px 10px 30px;
+  z-index: 1;
+}
+body .page-wrapper#home .page-content-wrapper .contact-wrapper .contact-title-wrapper h2 {
+  font-size: 24px;
+}
+body .page-wrapper#home .page-content-wrapper .contact-wrapper .contact-items-wrapper {
+  position: relative;
+  padding: 20px 30px 10px 30px;
+  z-index: 1;
+}
+body .page-wrapper#home .page-content-wrapper .contact-wrapper .contact-items-wrapper .contact-item-wrapper {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-areas: "icon title" ". description";
+  grid-template-columns: 1fr 10fr;
+}
+body .page-wrapper#home .page-content-wrapper .contact-wrapper .contact-items-wrapper .contact-item-wrapper .contact-item-icon-wrapper {
+  grid-area: icon;
+  font-size: 38px;
+}
+body .page-wrapper#home .page-content-wrapper .contact-wrapper .contact-items-wrapper .contact-item-wrapper .contact-title-wrapper {
+  grid-area: title;
+}
+body .page-wrapper#home .page-content-wrapper .contact-wrapper .contact-items-wrapper .contact-item-wrapper .contact-item-description-wrapper {
+  grid-area: description;
+  color: #dcdcdc;
+  font-size: 14px;
 }/*# sourceMappingURL=home.css.map */

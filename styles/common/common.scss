@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
 $dark-grey: #323437;
-$lighter-grey: #888888;
-$light-grey: #555555;
+$grey: #555555;
+$light-grey: #999999;
+$lighter-grey: #dcdcdc;
 $orange: #ff9800;
 $red: #f44336;
 $pink: #e91e63;
@@ -28,7 +29,7 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
 
   background-color: $button-color;
   border-radius: $border-radius;
-  box-shadow: 0px 5px 30px -8px $shadow-color;
+  box-shadow: 0px 5px 10px -5px $shadow-color;
   transition: box-shadow ease-out 0.3s;
 
   &:hover {
@@ -36,7 +37,7 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
       color: $color-change;
       transition: color ease-in 0.8s;
     }
-    box-shadow: 0px 10px 20px -5px $shadow-color;
+    box-shadow: 0px 5px 10px -3px $shadow-color;
     transition: box-shadow ease-in 0.3s;
   }
 }
@@ -55,10 +56,11 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
 
 * {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
+
   h1,
   h2,
   h3,
@@ -84,7 +86,7 @@ body {
 
         a {
           text-decoration: none;
-          color: $light-grey;
+          color: $grey;
         }
 
         .nav-name {
@@ -113,13 +115,13 @@ body {
     }
 
     .page-content-wrapper {
-      margin: 0 20px;
+      margin: 0 15px;
       background-color: white;
       border-radius: 5px 5px 0 0;
       position: relative;
       top: -50px;
       z-index: 99;
-      padding-bottom: 50px;
+      box-shadow: 0px 5px 17px 0px $grey;
     }
 
     footer {
