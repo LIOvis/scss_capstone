@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body .page-wrapper#home .hero-wrapper {
+  background-image: url("../../assets/clouds.jpg");
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+body .page-wrapper#home .hero-wrapper .hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+body .page-wrapper#home .hero-wrapper .hero-image-wrapper img {
+  position: relative;
+  width: 100vw;
+}
+body .page-wrapper#home .hero-wrapper .hero-image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99.3%;
+  background-color: rgba(0, 0, 0, 0.4823529412);
+  z-index: 1;
+}
+body .page-wrapper#home .hero-wrapper .hero-content-wrapper {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 2;
+}
+body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-title-wrapper {
+  margin-bottom: 20px;
+}
+body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-button-wrapper {
+  margin-top: 20px;
+  padding: 20px;
+}
+body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-button-wrapper .button {
+  padding: 15px 20px;
+  background-color: #e91e63;
+  border-radius: 5px;
+  box-shadow: 0px 5px 30px -8px #e91e63;
+  transition: box-shadow ease-out 0.3s;
+}
+body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-button-wrapper .button a {
+  color: white;
+  transition: color ease-out 0.8s;
+  text-decoration: none;
+}
+body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-button-wrapper .button:hover {
+  box-shadow: 0px 10px 20px -5px #e91e63;
+  transition: box-shadow ease-in 0.3s;
+}
+body .page-wrapper#home .hero-wrapper .hero-content-wrapper .hero-button-wrapper .button:hover a {
+  color: #ffaec9;
+  transition: color ease-in 0.8s;
+}/*# sourceMappingURL=home.css.map */
