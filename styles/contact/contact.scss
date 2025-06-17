@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+$darker-grey: #323437;
+$dark-grey: #3c4858;
+$grey: #555555;
+$light-grey: #999999;
+$lighter-grey: #dcdcdc;
+$orange: #ff9800;
+$red: #f44336;
+$pink: #e91e63;
+$light-pink: #ffaec9;
+$pink-purple: #9b2279;
+$purple: #89229b;
+$blue: #00bcd4;
+$dark-blue: #23527c;
+$green: #4caf50;
+$header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
+
+@mixin button(
+  $button-color: $pink,
+  $shadow-color: $pink,
+  $border-radius: 100px,
+  $color-change: $light-pink
+) {
+  a {
+    color: white;
+    transition: color ease-out 0.8s;
+    text-decoration: none;
+  }
+
+  background-color: $button-color;
+  border-radius: $border-radius;
+  box-shadow: 0px 5px 10px -5px $shadow-color;
+  transition: box-shadow ease-out 0.3s;
+
+  &:hover {
+    a {
+      color: $color-change;
+      transition: color ease-in 0.8s;
+    }
+    box-shadow: 0px 5px 10px -3px $shadow-color;
+    transition: box-shadow ease-in 0.3s;
+  }
+}
+
+@mixin container(
+  $display: flex,
+  $justify-content: space-between,
+  $align-items: center,
+  $gap: 0px
+) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+body {
+  .page-wrapper#contact {
+    header {
+      nav {
+        .nav-items {
+          .nav-item {
+            &:nth-of-type(3) {
+              a {
+                color: $pink;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .hero-wrapper {
+      .hero-maps-wrapper {
+        margin-top: 75px;
+        z-index: 2;
+        iframe {
+          height: 355px;
+          width: 100vw;
+        }
+      }
+    }
+
+    .contact-content-wrapper {
+      background-color: white;
+      color: $light-grey;
+      width: calc(100% - 50px);
+      height: 100vh;
+      padding: 30px 25px 75px;
+      font-size: 14px;
+      @include container($gap: 30px);
+
+      .left-column-wrapper {
+        @include container(
+          $align-items: flex-start,
+          $justify-content: flex-end,
+          $gap: 80px
+        );
+        flex-direction: column;
+        height: 75%;
+        width: 50%;
+
+        .contact-title-wrapper {
+          h2 {
+            color: $dark-grey;
+            font-size: 37px;
+            font-family: "Roboto Slab", "Times New Roman", Times, serif;
+          }
+        }
+        .contact-form-wrapper {
+          width: 100%;
+
+          form {
+            width: 100%;
+            height: 60vh;
+            @include container($align-items: flex-start);
+            flex-direction: column;
+
+            input {
+              border: none;
+              border-bottom: $lighter-grey solid 2px;
+              width: 80%;
+              transition: border-color ease-out 0.3s;
+
+              &:focus {
+                outline: none;
+                border-color: $pink;
+                transition: border-color ease-in 0.3s;
+              }
+
+              &::placeholder {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+
+            textarea {
+              outline: none;
+              border: none;
+              border-bottom: $lighter-grey solid 2px;
+              width: 80%;
+              height: 50%;
+              transition: border-color ease-out 0.3s;
+
+              &:focus {
+                border-color: $pink;
+                transition: border-color ease-in 0.3s;
+              }
+            }
+
+            button {
+              background-color: $pink;
+              border: none;
+              border-radius: 3px;
+              padding: 15px 35px;
+              color: white;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .right-column-wrapper {
+        width: calc(50% - 80px);
+        height: 60vh;
+        @include container($align-items: flex-start);
+        flex-direction: column;
+
+        .right-column-item-wrapper {
+          @include container($align-items: flex-start);
+          flex-direction: column;
+          height: 25%;
+
+          .right-column-item-title-wrapper {
+            font-weight: bold;
+            font-family: "Roboto Slab", "Times New Roman", Times, serif;
+            color: $dark-grey;
+            font-size: 18px;
+            @include container($justify-content: flex-start, $gap: 8px);
+
+            img {
+              height: 25px;
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

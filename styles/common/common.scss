@@ -103,6 +103,13 @@ body {
 
           .nav-item {
             padding: 15px;
+
+            a {
+              &:hover {
+                color: $pink;
+                transition: color ease-in 0.3s;
+              }
+            }
           }
 
           .nav-button {

@@ -47,6 +47,10 @@ body .page-wrapper header nav .nav-items {
 body .page-wrapper header nav .nav-items .nav-item {
   padding: 15px;
 }
+body .page-wrapper header nav .nav-items .nav-item a:hover {
+  color: #e91e63;
+  transition: color ease-in 0.3s;
+}
 body .page-wrapper header nav .nav-items .nav-button {
   background-color: #e91e63;
   border-radius: 100px;
