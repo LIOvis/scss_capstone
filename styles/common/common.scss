@@ -12,6 +12,7 @@ $light-pink: #ffaec9;
 $pink-purple: #9b2279;
 $purple: #89229b;
 $blue: #00bcd4;
+$dark-blue: #23527c;
 $green: #4caf50;
 $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
 
@@ -132,6 +133,7 @@ body {
       bottom: 0;
       width: 100vw;
       height: 0px;
+      z-index: 100;
 
       .footer-items-wrapper {
         margin: 0;

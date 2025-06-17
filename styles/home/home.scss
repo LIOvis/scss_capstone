@@ -12,6 +12,7 @@ $light-pink: #ffaec9;
 $pink-purple: #9b2279;
 $purple: #89229b;
 $blue: #00bcd4;
+$dark-blue: #23527c;
 $green: #4caf50;
 $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
 
@@ -208,6 +209,57 @@ body {
         }
       }
 
+      .blog-wrapper {
+        text-align: center;
+        margin-top: 30px;
+
+        h2 {
+          font-size: 24px;
+        }
+
+        a {
+          color: $grey;
+          text-decoration: none;
+        }
+
+        .blog-item-wrapper {
+          padding: 60px 30px;
+
+          .blog-item-tag-wrapper {
+            font-size: 12px;
+            padding-bottom: 17px;
+            a {
+              color: $purple;
+            }
+          }
+          &:nth-of-type(2) {
+            .blog-item-tag-wrapper {
+              a {
+                color: $blue;
+              }
+            }
+          }
+
+          &:nth-of-type(3) {
+            .blog-item-tag-wrapper {
+              a {
+                color: $red;
+              }
+            }
+          }
+
+          .blog-item-text-wrapper {
+            color: $light-grey;
+            font-size: 14px;
+            padding-top: 17px;
+
+            a {
+              color: $dark-blue;
+            }
+          }
+        }
+      }
+
       .contact-wrapper {
         position: relative;
         height: 400px;
@@ -215,7 +267,6 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
         color: white;
 
         &::before {
@@ -254,10 +305,13 @@ body {
             .contact-item-icon-wrapper {
               grid-area: icon;
               font-size: 38px;
+              padding: 12px 12px 0 0;
+              justify-self: flex-end;
             }
 
-            .contact-title-wrapper {
+            .contact-item-title-wrapper {
               grid-area: title;
+              padding: 20px 0 15px;
             }
 
             .contact-item-description-wrapper {

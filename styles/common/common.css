@@ -87,6 +87,7 @@ body .page-wrapper footer {
   bottom: 0;
   width: 100vw;
   height: 0px;
+  z-index: 100;
 }
 body .page-wrapper footer .footer-items-wrapper {
   margin: 0;
