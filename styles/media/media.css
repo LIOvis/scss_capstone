@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 @media screen and (max-width: 730px) {
+  body .page-wrapper header nav .nav-items .nav-item {
+    padding: 12px;
+  }
   body .page-wrapper .home-hero-wrapper {
+    margin-top: 75px;
+  }
+  body .page-wrapper .home-hero-wrapper .hero-image-wrapper {
     position: relative;
-    top: 75px;
   }
   body .page-wrapper .home-hero-wrapper .hero-content-wrapper .hero-title-wrapper h1 {
     font-size: 30px;
@@ -11,6 +16,23 @@
   body .page-wrapper .page-content-wrapper {
     margin: 0;
     border-radius: 0;
+    top: -3px;
+  }
+  body .page-wrapper .page-content-wrapper .feat-wrapper .feat-items-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+  body .page-wrapper .page-content-wrapper .about-wrapper {
+    height: 400px;
+  }
+  body .page-wrapper .page-content-wrapper .about-wrapper .about-text-wrapper {
+    padding-bottom: 40px;
+  }
+  body .page-wrapper .page-content-wrapper .about-wrapper .about-image-wrapper {
+    text-align: center;
+  }
+  body .page-wrapper .page-content-wrapper .about-wrapper .about-image-wrapper img {
+    max-width: 620px;
   }
   body .page-wrapper .contact-content-wrapper {
     flex-direction: column;
@@ -26,5 +48,8 @@
   body .page-wrapper .contact-content-wrapper .left-column-wrapper .contact-form-wrapper input,
   body .page-wrapper .contact-content-wrapper .left-column-wrapper .contact-form-wrapper textarea {
     width: 100% !important;
+  }
+  body .page-wrapper footer .footer-items-wrapper {
+    top: -3px;
   }
 }/*# sourceMappingURL=media.css.map */
