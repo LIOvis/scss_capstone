@@ -70,6 +70,30 @@ body .page-wrapper header nav .nav-items .nav-button:hover a {
   color: #ffaec9;
   transition: color ease-in 0.8s;
 }
+body .page-wrapper .hero-wrapper {
+  background-image: linear-gradient(45deg, #9b2279 0%, #e91e63 50%);
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  height: 425px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+body .page-wrapper .hero-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 425px;
+  background-color: rgba(47, 47, 47, 0.1019607843);
+  z-index: 1;
+}
+body .page-wrapper .hero-wrapper .hero-title {
+  color: white;
+  z-index: 2;
+}
 body .page-wrapper .page-content-wrapper {
   margin: 0 15px;
   background-color: white;

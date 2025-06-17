@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
-$dark-grey: #323437;
+$darker-grey: #323437;
+$dark-grey: #3c4858;
 $grey: #555555;
 $light-grey: #999999;
 $lighter-grey: #dcdcdc;
@@ -60,7 +61,7 @@ body {
     .hero-wrapper {
       background-image: url("../../assets/clouds.jpg");
       background-size: 100vw auto;
-      background-repeat: no-repeat;
+      height: 725px;
       @include container($justify-content: center);
 
       .hero-image-wrapper {

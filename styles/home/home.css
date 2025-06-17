@@ -3,7 +3,7 @@
 body .page-wrapper#home .hero-wrapper {
   background-image: url("../../assets/clouds.jpg");
   background-size: 100vw auto;
-  background-repeat: no-repeat;
+  height: 725px;
   display: flex;
   justify-content: center;
   align-items: center;
