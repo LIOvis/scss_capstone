@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@media screen and (max-width: 730px) {
+  body .page-wrapper .home-hero-wrapper {
+    position: relative;
+    top: 75px;
+  }
+  body .page-wrapper .home-hero-wrapper .hero-content-wrapper .hero-title-wrapper h1 {
+    font-size: 30px;
+  }
+  body .page-wrapper .page-content-wrapper {
+    margin: 0;
+    border-radius: 0;
+  }
+  body .page-wrapper .contact-content-wrapper {
+    flex-direction: column;
+    width: calc(100% - 50px);
+  }
+  body .page-wrapper .contact-content-wrapper .left-column-wrapper,
+  body .page-wrapper .contact-content-wrapper .right-column-wrapper {
+    width: calc(100% - 50px) !important;
+  }
+  body .page-wrapper .contact-content-wrapper .left-column-wrapper {
+    margin-bottom: 75px;
+  }
+  body .page-wrapper .contact-content-wrapper .left-column-wrapper .contact-form-wrapper input,
+  body .page-wrapper .contact-content-wrapper .left-column-wrapper .contact-form-wrapper textarea {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=media.css.map */

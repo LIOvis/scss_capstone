@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+$darker-grey: #323437;
+$dark-grey: #3c4858;
+$grey: #555555;
+$light-grey: #999999;
+$lighter-grey: #dcdcdc;
+$orange: #ff9800;
+$red: #f44336;
+$pink: #e91e63;
+$light-pink: #ffaec9;
+$pink-purple: #9b2279;
+$purple: #89229b;
+$blue: #00bcd4;
+$dark-blue: #23527c;
+$green: #4caf50;
+$header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
+
+@mixin button(
+  $button-color: $pink,
+  $shadow-color: $pink,
+  $border-radius: 100px,
+  $color-change: $light-pink
+) {
+  a {
+    color: white;
+    transition: color ease-out 0.8s;
+    text-decoration: none;
+  }
+
+  background-color: $button-color;
+  border-radius: $border-radius;
+  box-shadow: 0px 5px 10px -5px $shadow-color;
+  transition: box-shadow ease-out 0.3s;
+
+  &:hover {
+    a {
+      color: $color-change;
+      transition: color ease-in 0.8s;
+    }
+    box-shadow: 0px 5px 10px -3px $shadow-color;
+    transition: box-shadow ease-in 0.3s;
+  }
+}
+
+@mixin container(
+  $display: flex,
+  $justify-content: space-between,
+  $align-items: center,
+  $gap: 0px
+) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+@media screen and (max-width: 730px) {
+  body {
+    .page-wrapper {
+      .home-hero-wrapper {
+        position: relative;
+        top: 75px;
+        .hero-content-wrapper {
+          .hero-title-wrapper {
+            h1 {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      .page-content-wrapper {
+        margin: 0;
+        border-radius: 0;
+      }
+      .contact-content-wrapper {
+        flex-direction: column;
+        width: calc(100% - 50px);
+
+        .left-column-wrapper,
+        .right-column-wrapper {
+          width: calc(100% - 50px) !important;
+        }
+
+        .left-column-wrapper {
+          margin-bottom: 75px;
+
+          .contact-form-wrapper {
+            input,
+            textarea {
+              width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

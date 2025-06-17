@@ -1,29 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
-body .page-wrapper#contact header nav .nav-items .nav-item:nth-of-type(3) a {
+body .contact header nav .nav-items .nav-item:nth-of-type(3) a {
   color: #e91e63;
 }
-body .page-wrapper#contact .hero-wrapper .hero-maps-wrapper {
+body .contact .hero-wrapper .hero-maps-wrapper {
   margin-top: 75px;
   z-index: 2;
 }
-body .page-wrapper#contact .hero-wrapper .hero-maps-wrapper iframe {
+body .contact .hero-wrapper .hero-maps-wrapper iframe {
   height: 355px;
   width: 100vw;
 }
-body .page-wrapper#contact .contact-content-wrapper {
+body .contact .contact-content-wrapper {
   background-color: white;
   color: #999999;
   width: calc(100% - 50px);
-  height: 100vh;
-  padding: 30px 25px 75px;
+  padding: 60px 25px 125px;
   font-size: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
-body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper {
+body .contact .contact-content-wrapper .left-column-wrapper {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -32,15 +31,15 @@ body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper {
   height: 75%;
   width: 50%;
 }
-body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contact-title-wrapper h2 {
+body .contact .contact-content-wrapper .left-column-wrapper .contact-title-wrapper h2 {
   color: #3c4858;
   font-size: 37px;
   font-family: "Roboto Slab", "Times New Roman", Times, serif;
 }
-body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper {
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper {
   width: 100%;
 }
-body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form {
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form {
   width: 100%;
   height: 60vh;
   display: flex;
@@ -49,26 +48,26 @@ body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contac
   gap: 0px;
   flex-direction: column;
 }
-body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form input {
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form input {
   border: none;
   border-bottom: #dcdcdc solid 2px;
   width: 80%;
   transition: border-color ease-out 0.3s;
 }
-body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form input:focus {
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form input:focus {
   outline: none;
   border-color: #e91e63;
   transition: border-color ease-in 0.3s;
 }
-body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form input::-moz-placeholder {
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form input::-moz-placeholder {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
-body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form input::placeholder {
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form input::placeholder {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
-body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form textarea {
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form textarea {
   outline: none;
   border: none;
   border-bottom: #dcdcdc solid 2px;
@@ -76,19 +75,34 @@ body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contac
   height: 50%;
   transition: border-color ease-out 0.3s;
 }
-body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form textarea:focus {
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form textarea::-moz-placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form textarea::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form textarea:focus {
   border-color: #e91e63;
   transition: border-color ease-in 0.3s;
 }
-body .page-wrapper#contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form button {
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form button {
   background-color: #e91e63;
   border: none;
   border-radius: 3px;
   padding: 15px 35px;
   color: white;
   font-size: 12px;
+  box-shadow: 0px 0.5px 15px -3px #e91e63;
+  transition: box-shadow ease-out 0.3s;
+  cursor: pointer;
 }
-body .page-wrapper#contact .contact-content-wrapper .right-column-wrapper {
+body .contact .contact-content-wrapper .left-column-wrapper .contact-form-wrapper form button:hover {
+  box-shadow: 0px 3px 15px -3px #e91e63;
+  transition: box-shadow ease-in 0.5s;
+}
+body .contact .contact-content-wrapper .right-column-wrapper {
   width: calc(50% - 80px);
   height: 60vh;
   display: flex;
@@ -97,25 +111,29 @@ body .page-wrapper#contact .contact-content-wrapper .right-column-wrapper {
   gap: 0px;
   flex-direction: column;
 }
-body .page-wrapper#contact .contact-content-wrapper .right-column-wrapper .right-column-item-wrapper {
+body .contact .contact-content-wrapper .right-column-wrapper .right-column-item-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 0px;
   flex-direction: column;
   height: 25%;
 }
-body .page-wrapper#contact .contact-content-wrapper .right-column-wrapper .right-column-item-wrapper .right-column-item-title-wrapper {
+body .contact .contact-content-wrapper .right-column-wrapper .right-column-item-wrapper .right-column-item-title-wrapper {
   font-weight: bold;
   font-family: "Roboto Slab", "Times New Roman", Times, serif;
   color: #3c4858;
   font-size: 18px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
 }
-body .page-wrapper#contact .contact-content-wrapper .right-column-wrapper .right-column-item-wrapper .right-column-item-title-wrapper img {
+body .contact .contact-content-wrapper .right-column-wrapper .right-column-item-wrapper .right-column-item-title-wrapper img {
   height: 25px;
   width: 25px;
+}
+body .contact .contact-content-wrapper .right-column-wrapper .right-column-item-wrapper .right-column-item-text-wrapper {
+  line-height: 20px;
 }/*# sourceMappingURL=contact.css.map */

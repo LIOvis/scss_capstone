@@ -57,7 +57,7 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
 }
 
 body {
-  .page-wrapper#contact {
+  .contact {
     header {
       nav {
         .nav-items {
@@ -87,8 +87,7 @@ body {
       background-color: white;
       color: $light-grey;
       width: calc(100% - 50px);
-      height: 100vh;
-      padding: 30px 25px 75px;
+      padding: 60px 25px 125px;
       font-size: 14px;
       @include container($gap: 30px);
 
@@ -144,6 +143,11 @@ body {
               height: 50%;
               transition: border-color ease-out 0.3s;
 
+              &::placeholder {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+
               &:focus {
                 border-color: $pink;
                 transition: border-color ease-in 0.3s;
@@ -157,6 +161,14 @@ body {
               padding: 15px 35px;
               color: white;
               font-size: 12px;
+              box-shadow: 0px 0.5px 15px -3px $pink;
+              transition: box-shadow ease-out 0.3s;
+              cursor: pointer;
+
+              &:hover {
+                box-shadow: 0px 3px 15px -3px $pink;
+                transition: box-shadow ease-in 0.5s;
+              }
             }
           }
         }
@@ -169,7 +181,10 @@ body {
         flex-direction: column;
 
         .right-column-item-wrapper {
-          @include container($align-items: flex-start);
+          @include container(
+            $justify-content: flex-start,
+            $align-items: flex-start
+          );
           flex-direction: column;
           height: 25%;
 
@@ -178,12 +193,17 @@ body {
             font-family: "Roboto Slab", "Times New Roman", Times, serif;
             color: $dark-grey;
             font-size: 18px;
+            margin-bottom: 15px;
             @include container($justify-content: flex-start, $gap: 8px);
 
             img {
               height: 25px;
               width: 25px;
             }
+          }
+
+          .right-column-item-text-wrapper {
+            line-height: 20px;
           }
         }
       }
