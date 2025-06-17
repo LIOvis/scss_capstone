@@ -593,6 +593,12 @@ body .contact .contact-content-wrapper .right-column-wrapper .right-column-item-
   body .page-wrapper header nav .nav-items .nav-item {
     padding: 12px;
   }
+  body .page-wrapper .hero-wrapper {
+    height: 300px;
+  }
+  body .page-wrapper .hero-wrapper .hero-title {
+    padding-top: 50px;
+  }
   body .page-wrapper .home-hero-wrapper {
     margin-top: 75px;
   }
@@ -639,6 +645,13 @@ body .contact .contact-content-wrapper .right-column-wrapper .right-column-item-
     width: 100% !important;
   }
   body .page-wrapper footer .footer-items-wrapper {
+    height: 90px;
     top: -3px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0;
+  }
+  body .page-wrapper footer .footer-items-wrapper .footer-links-wrapper {
+    margin-bottom: 25px;
   }
 }/*# sourceMappingURL=main.css.map */

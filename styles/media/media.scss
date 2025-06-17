@@ -68,6 +68,13 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
           }
         }
       }
+      .hero-wrapper {
+        height: 300px;
+
+        .hero-title {
+          padding-top: 50px;
+        }
+      }
       .home-hero-wrapper {
         margin-top: 75px;
         .hero-image-wrapper {
@@ -128,7 +135,15 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
       }
       footer {
         .footer-items-wrapper {
+          height: 90px;
           top: -3px;
+          flex-direction: column;
+          justify-content: center;
+          padding: 30px 0;
+
+          .footer-links-wrapper {
+            margin-bottom: 25px;
+          }
         }
       }
     }
