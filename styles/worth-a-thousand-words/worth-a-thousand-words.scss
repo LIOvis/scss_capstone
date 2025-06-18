@@ -55,3 +55,44 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
   align-items: $align-items;
   gap: $gap;
 }
+
+body {
+  .worth-a-thousand-words {
+    .hero-wrapper {
+      color: white;
+      flex-direction: column;
+      gap: 30px;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+      font-weight: 100;
+
+      .hero-text {
+        z-index: 1;
+        a {
+          color: white;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .page-content-wrapper {
+      padding: 70px 3%;
+      color: $dark-grey;
+
+      .blog-image-wrapper {
+        font-size: 14px;
+        font-weight: bold;
+        display: inline-block;
+
+        p {
+          text-align: center;
+          padding: 8px 0 15px;
+        }
+      }
+
+      .blog-text-wrapper {
+        font-size: 18px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}

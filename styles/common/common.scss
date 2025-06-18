@@ -26,7 +26,6 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
   a {
     color: white;
     transition: color ease-out 0.8s;
-    text-decoration: none;
   }
 
   background-color: $button-color;
@@ -63,6 +62,11 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
 body {
   font-family: Arial, Helvetica, sans-serif;
 
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   h1,
   h2,
   h3,
@@ -70,8 +74,13 @@ body {
   h5,
   h6 {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 500;
   }
 
+  .break-line {
+    border-top: solid $lighter-grey 1px;
+    margin-top: 40px;
+  }
   .page-wrapper {
     background-color: $lighter-grey;
 
@@ -87,7 +96,6 @@ body {
         top: 0px;
 
         a {
-          text-decoration: none;
           color: $grey;
         }
 
@@ -129,6 +137,19 @@ body {
       background-repeat: no-repeat;
       height: 425px;
       @include container($justify-content: center);
+      color: white;
+      flex-direction: column;
+      gap: 30px;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+      font-weight: 100;
+
+      .hero-text {
+        z-index: 1;
+        a {
+          color: white;
+          font-weight: bold;
+        }
+      }
 
       &::before {
         content: "";
@@ -155,6 +176,152 @@ body {
       top: -50px;
       z-index: 99;
       box-shadow: 0px 5px 17px 0px $grey;
+
+      .categories-wrapper {
+        font-size: 14px;
+        margin-bottom: 15px;
+        line-height: 11.5px;
+        @include container($justify-content: flex-start, $gap: 10px);
+
+        p {
+          margin: 0;
+        }
+
+        .categories-buttons-wrapper {
+          .category-button-wrapper {
+            @include button($shadow-color: white);
+            font-size: 10px;
+            padding: 5px 12px;
+          }
+        }
+      }
+
+      .tags-wrapper {
+        line-height: 11.5px;
+        font-size: 14px;
+        @include container($justify-content: flex-start, $gap: 10px);
+
+        a {
+          color: $pink;
+          margin-right: 5px;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .share-icons-wrapper {
+        @include container($justify-content: flex-start, $gap: 10px);
+        color: white;
+        font-size: 20px;
+        position: relative;
+        z-index: 100;
+        margin-top: 15px;
+        height: 45px;
+
+        .share-icon-wrapper {
+          text-align: center;
+          width: 45px;
+          height: inherit;
+          @include container($justify-content: center);
+        }
+
+        .facebook-icon {
+          @include button(
+            $button-color: #3c5998,
+            $color-change: white,
+            $shadow-color: $dark-grey
+          );
+        }
+
+        .x-icon {
+          @include button(
+            $button-color: black,
+            $color-change: white,
+            $shadow-color: $dark-grey
+          );
+        }
+
+        .mail-icon {
+          @include button(
+            $button-color: $light-grey,
+            $color-change: white,
+            $shadow-color: $dark-grey
+          );
+        }
+      }
+    }
+
+    .related-wrapper {
+      margin: 80px 35px 40px;
+      .related-title {
+        text-align: center;
+        h2 {
+          font-family: "Roboto Slab", "Times New Roman", Times, serif;
+          font-size: 37px;
+        }
+      }
+
+      .related-items-wrapper {
+        margin-bottom: 88px;
+        a {
+          color: $grey;
+        }
+
+        .related-item-wrapper {
+          background-color: white;
+          padding: 15px 30px;
+          margin-top: 60px;
+          display: block;
+          justify-self: center;
+          border-radius: 5px;
+          box-shadow: 0px 5px 17px 0px $grey;
+          width: calc(100% - 70px);
+          max-width: 720px;
+
+          .related-item-tag-wrapper {
+            font-size: 12px;
+            padding-bottom: 17px;
+            a {
+              color: $purple;
+            }
+          }
+          &:nth-of-type(2) {
+            .related-item-tag-wrapper {
+              a {
+                color: $blue;
+              }
+            }
+          }
+
+          &:nth-of-type(3) {
+            .related-item-tag-wrapper {
+              a {
+                color: $red;
+              }
+            }
+          }
+
+          .related-item-title-wrapper {
+            h4 {
+              font-size: 18px;
+              font-family: "Roboto Slab", "Times New Roman", Times, serif;
+            }
+          }
+
+          .related-item-text-wrapper {
+            color: $light-grey;
+            font-size: 14px;
+            padding-top: 17px;
+            margin-bottom: 10px;
+
+            a {
+              color: $dark-blue;
+            }
+          }
+        }
+      }
     }
 
     footer {
@@ -177,7 +344,6 @@ body {
 
         a {
           color: white;
-          text-decoration: none;
         }
 
         .footer-links-wrapper,

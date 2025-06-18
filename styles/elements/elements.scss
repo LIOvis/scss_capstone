@@ -26,7 +26,6 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
   a {
     color: white;
     transition: color ease-out 0.8s;
-    text-decoration: none;
   }
 
   background-color: $button-color;
@@ -54,4 +53,205 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
   justify-content: $justify-content;
   align-items: $align-items;
   gap: $gap;
+}
+
+body {
+  color: $dark-grey;
+  line-height: 25px;
+  .elements {
+    .page-content-wrapper {
+      h1 {
+        font-size: 42px;
+        margin: 40px 0;
+      }
+
+      h2 {
+        font-size: 37px;
+        margin: 38px 0;
+      }
+
+      h3 {
+        font-size: 32px;
+        margin: 36px 0;
+      }
+
+      h4 {
+        font-size: 27px;
+        margin: 34px 0;
+      }
+
+      h5 {
+        font-size: 23px;
+        margin: 32px 0;
+      }
+
+      h6 {
+        font-size: 18px;
+        margin: 30px 0;
+      }
+
+      a {
+        color: $pink;
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      dt {
+        font-weight: bold;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 30px;
+      }
+
+      legend {
+        font-size: 21px;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input {
+        border: none;
+        border-bottom: $lighter-grey solid 2px;
+        width: 100%;
+        transition: border-color ease-out 0.3s;
+
+        &:focus {
+          outline: none;
+          border-color: $pink;
+          transition: border-color ease-in 0.3s;
+        }
+
+        &::placeholder {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+
+        &[type="radio"],
+        &[type="checkbox"],
+        &[type="file"],
+        &.button {
+          width: auto;
+          border-bottom: none;
+        }
+
+        &[type="file"] {
+          padding: 10px 0 0 10px;
+          &::file-selector-button {
+            font-size: 16px;
+          }
+        }
+      }
+
+      textarea {
+        outline: none;
+        border: none;
+        border-bottom: $lighter-grey solid 2px;
+        width: 100%;
+        height: 50px;
+        transition: border-color ease-out 0.3s;
+
+        &::placeholder {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+
+        &:focus {
+          border-color: $pink;
+          transition: border-color ease-in 0.3s;
+        }
+      }
+
+      button {
+        height: 50px;
+        margin-right: 5px;
+        border-radius: 3px;
+
+        &[type="reset"] {
+          border: solid $grey 1px;
+          box-shadow: 0px 1.5px 5px -2px $pink;
+        }
+
+        &[type="submit"] {
+          background-color: $pink;
+          border: none;
+          padding: 15px 35px;
+          color: white;
+          font-size: 12px;
+          box-shadow: 0px 0.5px 15px -3px $pink;
+          transition: box-shadow ease-out 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            box-shadow: 0px 3px 15px -3px $pink;
+            transition: box-shadow ease-in 0.5s;
+          }
+        }
+      }
+
+      table {
+        width: 100%;
+        border-spacing: 0;
+        tbody {
+          tr {
+            text-align: left;
+            th,
+            td {
+              border-bottom: $lighter-grey solid 1px;
+              padding: 15px 0 15px 2px;
+            }
+            &:last-of-type {
+              td {
+                border: 0;
+              }
+            }
+          }
+        }
+      }
+
+      pre {
+        overflow-x: scroll;
+        background-color: #f5f5f5;
+        border: 1px solid $lighter-grey;
+        border-radius: 3px;
+        font-size: 13px;
+        padding: 10px;
+        margin-bottom: 30px;
+      }
+
+      blockquote {
+        border-left: 5px solid #f5f5f5;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+
+      .blog-content-wrapper {
+        font-size: 16px;
+        padding: 80px 15px;
+
+        .blog-forms-wrapper {
+          .blog-forms-content-wrapper {
+            form {
+              &.form-element-wrapper {
+                .form-items-wrapper {
+                  .form-item-wrapper {
+                    margin-bottom: 25px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

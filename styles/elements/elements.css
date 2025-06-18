@@ -1,2 +1,161 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");/*# sourceMappingURL=elements.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+body {
+  color: #3c4858;
+  line-height: 25px;
+}
+body .elements .page-content-wrapper h1 {
+  font-size: 42px;
+  margin: 40px 0;
+}
+body .elements .page-content-wrapper h2 {
+  font-size: 37px;
+  margin: 38px 0;
+}
+body .elements .page-content-wrapper h3 {
+  font-size: 32px;
+  margin: 36px 0;
+}
+body .elements .page-content-wrapper h4 {
+  font-size: 27px;
+  margin: 34px 0;
+}
+body .elements .page-content-wrapper h5 {
+  font-size: 23px;
+  margin: 32px 0;
+}
+body .elements .page-content-wrapper h6 {
+  font-size: 18px;
+  margin: 30px 0;
+}
+body .elements .page-content-wrapper a {
+  color: #e91e63;
+}
+body .elements .page-content-wrapper p {
+  margin-bottom: 15px;
+}
+body .elements .page-content-wrapper dt {
+  font-weight: bold;
+}
+body .elements .page-content-wrapper ol,
+body .elements .page-content-wrapper ul {
+  margin-bottom: 30px;
+}
+body .elements .page-content-wrapper legend {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+body .elements .page-content-wrapper label {
+  font-weight: bold;
+}
+body .elements .page-content-wrapper input {
+  border: none;
+  border-bottom: #dcdcdc solid 2px;
+  width: 100%;
+  transition: border-color ease-out 0.3s;
+}
+body .elements .page-content-wrapper input:focus {
+  outline: none;
+  border-color: #e91e63;
+  transition: border-color ease-in 0.3s;
+}
+body .elements .page-content-wrapper input::-moz-placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+body .elements .page-content-wrapper input::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+body .elements .page-content-wrapper input[type=radio], body .elements .page-content-wrapper input[type=checkbox], body .elements .page-content-wrapper input[type=file], body .elements .page-content-wrapper input.button {
+  width: auto;
+  border-bottom: none;
+}
+body .elements .page-content-wrapper input[type=file] {
+  padding: 10px 0 0 10px;
+}
+body .elements .page-content-wrapper input[type=file]::file-selector-button {
+  font-size: 16px;
+}
+body .elements .page-content-wrapper textarea {
+  outline: none;
+  border: none;
+  border-bottom: #dcdcdc solid 2px;
+  width: 100%;
+  height: 50px;
+  transition: border-color ease-out 0.3s;
+}
+body .elements .page-content-wrapper textarea::-moz-placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+body .elements .page-content-wrapper textarea::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+body .elements .page-content-wrapper textarea:focus {
+  border-color: #e91e63;
+  transition: border-color ease-in 0.3s;
+}
+body .elements .page-content-wrapper button {
+  height: 50px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+body .elements .page-content-wrapper button[type=reset] {
+  border: solid #555555 1px;
+  box-shadow: 0px 1.5px 5px -2px #e91e63;
+}
+body .elements .page-content-wrapper button[type=submit] {
+  background-color: #e91e63;
+  border: none;
+  padding: 15px 35px;
+  color: white;
+  font-size: 12px;
+  box-shadow: 0px 0.5px 15px -3px #e91e63;
+  transition: box-shadow ease-out 0.3s;
+  cursor: pointer;
+}
+body .elements .page-content-wrapper button[type=submit]:hover {
+  box-shadow: 0px 3px 15px -3px #e91e63;
+  transition: box-shadow ease-in 0.5s;
+}
+body .elements .page-content-wrapper table {
+  width: 100%;
+  border-spacing: 0;
+}
+body .elements .page-content-wrapper table tbody tr {
+  text-align: left;
+}
+body .elements .page-content-wrapper table tbody tr th,
+body .elements .page-content-wrapper table tbody tr td {
+  border-bottom: #dcdcdc solid 1px;
+  padding: 15px 0 15px 2px;
+}
+body .elements .page-content-wrapper table tbody tr:last-of-type td {
+  border: 0;
+}
+body .elements .page-content-wrapper pre {
+  overflow-x: scroll;
+  background-color: #f5f5f5;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+body .elements .page-content-wrapper blockquote {
+  border-left: 5px solid #f5f5f5;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+body .elements .page-content-wrapper .blog-content-wrapper {
+  font-size: 16px;
+  padding: 80px 15px;
+}
+body .elements .page-content-wrapper .blog-content-wrapper .blog-forms-wrapper .blog-forms-content-wrapper form.form-element-wrapper .form-items-wrapper .form-item-wrapper {
+  margin-bottom: 25px;
+}/*# sourceMappingURL=elements.css.map */

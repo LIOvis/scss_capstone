@@ -62,7 +62,6 @@ body .home .home-hero-wrapper .hero-content-wrapper .hero-button-wrapper .button
 body .home .home-hero-wrapper .hero-content-wrapper .hero-button-wrapper .button a {
   color: white;
   transition: color ease-out 0.8s;
-  text-decoration: none;
 }
 body .home .home-hero-wrapper .hero-content-wrapper .hero-button-wrapper .button:hover {
   box-shadow: 0px 5px 10px -3px #e91e63;
@@ -160,7 +159,6 @@ body .home .page-content-wrapper .blog-wrapper h2 {
 }
 body .home .page-content-wrapper .blog-wrapper a {
   color: #555555;
-  text-decoration: none;
 }
 body .home .page-content-wrapper .blog-wrapper .blog-item-wrapper {
   padding: 60px 30px;
