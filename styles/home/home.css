@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 body .home .home-hero-wrapper {
   background-image: url("../../assets/clouds.jpg");
-  background-size: 100vw auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -12,11 +12,11 @@ body .home .home-hero-wrapper {
 body .home .home-hero-wrapper .hero-image-wrapper {
   position: relative;
   display: inline-block;
-  height: inherit;
+  height: 99vw;
 }
 body .home .home-hero-wrapper .hero-image-wrapper img {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 body .home .home-hero-wrapper .hero-image-wrapper::before {
   content: "";
@@ -32,7 +32,7 @@ body .home .home-hero-wrapper .hero-content-wrapper {
   position: absolute;
   display: block;
   text-align: center;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
   color: white;

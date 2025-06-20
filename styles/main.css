@@ -39,6 +39,9 @@ body .break-line {
 body .page-wrapper {
   background-color: #dcdcdc;
 }
+body .page-wrapper header {
+  width: 100%;
+}
 body .page-wrapper header nav {
   position: fixed;
   display: flex;
@@ -48,7 +51,7 @@ body .page-wrapper header nav {
   background-color: white;
   font-size: 12px;
   height: 75px;
-  width: 100vw;
+  width: inherit;
   z-index: 100;
   top: 0px;
 }
@@ -76,6 +79,7 @@ body .page-wrapper header nav .nav-items .nav-button {
   border-radius: 100px;
   box-shadow: 0px 5px 10px -5px #e91e63;
   transition: box-shadow ease-out 0.3s;
+  margin-right: 15px;
 }
 body .page-wrapper header nav .nav-items .nav-button a {
   color: white;
@@ -95,7 +99,7 @@ body .page-wrapper header nav .nav-items .nav-button:hover a {
 }
 body .page-wrapper .hero-wrapper {
   background-image: linear-gradient(45deg, #9b2279 0%, #e91e63 50%);
-  background-size: 100vw auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   height: 425px;
   display: flex;
@@ -319,7 +323,7 @@ body .page-wrapper footer {
   font-size: 14px;
   position: relative;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   height: 0px;
   z-index: 100;
 }
@@ -351,7 +355,7 @@ body .page-wrapper footer .footer-items-wrapper .footer-links-wrapper {
 
 body .home .home-hero-wrapper {
   background-image: url("../../assets/clouds.jpg");
-  background-size: 100vw auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -361,11 +365,11 @@ body .home .home-hero-wrapper {
 body .home .home-hero-wrapper .hero-image-wrapper {
   position: relative;
   display: inline-block;
-  height: inherit;
+  height: 99vw;
 }
 body .home .home-hero-wrapper .hero-image-wrapper img {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 body .home .home-hero-wrapper .hero-image-wrapper::before {
   content: "";
@@ -381,7 +385,7 @@ body .home .home-hero-wrapper .hero-content-wrapper {
   position: absolute;
   display: block;
   text-align: center;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
   color: white;
@@ -648,10 +652,11 @@ body .contact header nav .nav-items .nav-item:nth-of-type(3) a {
 body .contact .hero-wrapper .hero-maps-wrapper {
   margin-top: 75px;
   z-index: 2;
+  width: 100%;
 }
 body .contact .hero-wrapper .hero-maps-wrapper iframe {
-  height: 355px;
-  width: 100vw;
+  height: 356px;
+  width: 100%;
 }
 body .contact .contact-content-wrapper {
   background-color: white;

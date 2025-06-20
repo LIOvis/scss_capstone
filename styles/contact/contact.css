@@ -6,10 +6,11 @@ body .contact header nav .nav-items .nav-item:nth-of-type(3) a {
 body .contact .hero-wrapper .hero-maps-wrapper {
   margin-top: 75px;
   z-index: 2;
+  width: 100%;
 }
 body .contact .hero-wrapper .hero-maps-wrapper iframe {
-  height: 355px;
-  width: 100vw;
+  height: 356px;
+  width: 100%;
 }
 body .contact .contact-content-wrapper {
   background-color: white;
