@@ -38,6 +38,7 @@ $header-gradient: linear-gradient(45deg, $pink-purple 0%, $pink 50%);
       color: $color-change;
       transition: color ease-in 0.8s;
     }
+    cursor: pointer;
     box-shadow: 0px 5px 10px -3px $shadow-color;
     transition: box-shadow ease-in 0.3s;
   }
@@ -66,7 +67,6 @@ body {
       .hero-image-wrapper {
         position: relative;
         display: inline-block;
-        height: 99vw;
 
         img {
           position: relative;
@@ -79,7 +79,7 @@ body {
           top: 0;
           left: 0;
           width: 100%;
-          height: 99.3%;
+          height: 99%;
           background-color: #0000007b;
           z-index: 1;
         }
@@ -90,7 +90,6 @@ body {
         display: block;
         text-align: center;
         width: 100%;
-        justify-content: center;
         align-items: center;
         color: white;
         z-index: 2;
@@ -98,6 +97,7 @@ body {
 
         .hero-title-wrapper {
           margin: 0 15% 20px 15%;
+          padding-top: 100px;
 
           h1 {
             font-size: 67px;
@@ -106,6 +106,7 @@ body {
 
         .hero-text-wrapper {
           font-family: "Roboto Slab", "Times New Roman", Times, serif;
+          padding: 40px 0;
         }
         .hero-button-wrapper {
           margin-top: 20px;
@@ -147,6 +148,7 @@ body {
 
         .feat-items-wrapper {
           @include container($gap: 20px);
+          padding: 10px;
 
           .feat-item {
             .feat-item-title-wrapper {
@@ -164,13 +166,14 @@ body {
 
       .about-wrapper {
         position: relative;
-        height: 550px;
+        height: 300px;
         background-image: url("../../assets/mountains.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         color: white;
+        @include container($justify-content: center);
 
         &::before {
           content: "";
@@ -183,24 +186,27 @@ body {
           z-index: 1;
         }
 
-        .about-title-wrapper {
-          position: relative;
-          padding: 40px 30px 10px 30px;
-          z-index: 1;
-          h2 {
-            font-size: 28px;
+        .about-title-text-wrapper {
+          width: 40%;
+          .about-title-wrapper {
+            position: relative;
+            padding: 60px 30px 30px 30px;
+            z-index: 1;
+            h2 {
+              font-size: 28px;
+            }
+          }
+
+          .about-text-wrapper {
+            position: relative;
+            padding: 10px 30px 80px 30px;
+            z-index: 1;
+            font-size: 18px;
           }
         }
 
-        .about-text-wrapper {
-          position: relative;
-          padding: 10px 30px 80px 30px;
-          z-index: 1;
-          font-size: 18px;
-        }
-
         .about-image-wrapper {
-          width: 100%;
+          width: 40%;
           text-align: center;
           img {
             position: relative;
@@ -211,9 +217,11 @@ body {
       }
 
       .blog-wrapper {
-        text-align: center;
         margin-top: 30px;
-
+        .blog-title-wrapper {
+          text-align: center;
+          padding-top: 25px;
+        }
         h2 {
           font-size: 24px;
         }
@@ -222,39 +230,43 @@ body {
           color: $grey;
         }
 
-        .blog-item-wrapper {
-          padding: 60px 30px;
+        .blog-items-wrapper {
+          @include container($justify-content: center, $gap: 30px);
 
-          .blog-item-tag-wrapper {
-            font-size: 12px;
-            padding-bottom: 17px;
-            a {
-              color: $purple;
-            }
-          }
-          &:nth-of-type(2) {
+          .blog-item-wrapper {
+            padding: 60px 0;
+            width: 25%;
             .blog-item-tag-wrapper {
+              font-size: 12px;
+              padding-bottom: 17px;
               a {
-                color: $blue;
+                color: $purple;
               }
             }
-          }
-
-          &:nth-of-type(3) {
-            .blog-item-tag-wrapper {
-              a {
-                color: $red;
+            &:nth-of-type(2) {
+              .blog-item-tag-wrapper {
+                a {
+                  color: $blue;
+                }
               }
             }
-          }
 
-          .blog-item-text-wrapper {
-            color: $light-grey;
-            font-size: 14px;
-            padding-top: 17px;
+            &:nth-of-type(3) {
+              .blog-item-tag-wrapper {
+                a {
+                  color: $red;
+                }
+              }
+            }
 
-            a {
-              color: $dark-blue;
+            .blog-item-text-wrapper {
+              color: $light-grey;
+              font-size: 14px;
+              padding-top: 17px;
+
+              a {
+                color: $dark-blue;
+              }
             }
           }
         }

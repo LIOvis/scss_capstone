@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@media screen and (max-width: 1000px) {
+  body .page-wrapper .page-content-wrapper .blog-wrapper .blog-items-wrapper {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  body .page-wrapper .page-content-wrapper .blog-wrapper .blog-items-wrapper .blog-item-wrapper {
+    width: 50%;
+    text-align: center;
+    padding: 30px 0;
+  }
+}
 @media screen and (max-width: 730px) {
   body .page-wrapper header nav .nav-items .nav-item {
     padding: 12px;
@@ -29,40 +40,48 @@
     gap: 50px;
   }
   body .page-wrapper .page-content-wrapper .about-wrapper {
-    height: 400px;
+    height: 450px;
+    flex-direction: column;
   }
-  body .page-wrapper .page-content-wrapper .about-wrapper .about-text-wrapper {
+  body .page-wrapper .page-content-wrapper .about-wrapper .about-title-text-wrapper {
+    width: 100%;
+  }
+  body .page-wrapper .page-content-wrapper .about-wrapper .about-title-text-wrapper .about-text-wrapper {
     padding-bottom: 40px;
   }
   body .page-wrapper .page-content-wrapper .about-wrapper .about-image-wrapper {
     text-align: center;
+    width: 100%;
   }
   body .page-wrapper .page-content-wrapper .about-wrapper .about-image-wrapper img {
     max-width: 620px;
   }
-  body .page-wrapper .contact-content-wrapper {
+  body .page-wrapper .page-content-wrapper .contact-wrapper {
+    margin-bottom: 40px;
+  }
+  body .page-wrapper .page-content-wrapper .contact-wrapper .contact-content-wrapper {
     flex-direction: column;
     width: calc(100% - 50px);
   }
-  body .page-wrapper .contact-content-wrapper .left-column-wrapper,
-  body .page-wrapper .contact-content-wrapper .right-column-wrapper {
+  body .page-wrapper .page-content-wrapper .contact-wrapper .contact-content-wrapper .left-column-wrapper,
+  body .page-wrapper .page-content-wrapper .contact-wrapper .contact-content-wrapper .right-column-wrapper {
     width: calc(100% - 50px) !important;
   }
-  body .page-wrapper .contact-content-wrapper .left-column-wrapper {
+  body .page-wrapper .page-content-wrapper .contact-wrapper .contact-content-wrapper .left-column-wrapper {
     margin-bottom: 75px;
   }
-  body .page-wrapper .contact-content-wrapper .left-column-wrapper .contact-form-wrapper input,
-  body .page-wrapper .contact-content-wrapper .left-column-wrapper .contact-form-wrapper textarea {
+  body .page-wrapper .page-content-wrapper .contact-wrapper .contact-content-wrapper .left-column-wrapper .contact-form-wrapper input,
+  body .page-wrapper .page-content-wrapper .contact-wrapper .contact-content-wrapper .left-column-wrapper .contact-form-wrapper textarea {
     width: 100% !important;
   }
-  body .page-wrapper footer .footer-items-wrapper {
+  body .page-wrapper .page-content-wrapper footer .footer-items-wrapper {
     height: 90px;
     top: -3px;
     flex-direction: column;
     justify-content: center;
     padding: 30px 0;
   }
-  body .page-wrapper footer .footer-items-wrapper .footer-links-wrapper {
+  body .page-wrapper .page-content-wrapper footer .footer-items-wrapper .footer-links-wrapper {
     margin-bottom: 25px;
   }
 }/*# sourceMappingURL=media.css.map */

@@ -22,22 +22,22 @@ body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper .blog-it
   font-size: 12px;
   margin-bottom: 12px;
 }
-body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper .blog-item-tag-wrapper a {
+body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper .blog-item-tag-wrapper .tag-purple {
   color: #89229b;
 }
-body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper:nth-of-type(2) .blog-item-tag-wrapper a {
+body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper .blog-item-tag-wrapper .tag-blue {
   color: #00bcd4;
 }
-body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper:nth-of-type(3) .blog-item-tag-wrapper a {
+body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper .blog-item-tag-wrapper .tag-red {
   color: #f44336;
 }
-body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper:nth-of-type(4) .blog-item-tag-wrapper a {
+body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper .blog-item-tag-wrapper .tag-orange {
   color: #ff9800;
 }
-body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper:nth-of-type(5) .blog-item-tag-wrapper a {
+body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper .blog-item-tag-wrapper .tag-pink {
   color: #e91e63;
 }
-body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper:nth-of-type(6) .blog-item-tag-wrapper a {
+body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper .blog-item-tag-wrapper .tag-green {
   color: #4caf50;
 }
 body .blog .page-content-wrapper .blog-items-wrapper .blog-item-wrapper .blog-item-description-wrapper {
